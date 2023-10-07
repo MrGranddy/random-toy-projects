@@ -9,8 +9,6 @@ def roll_advantage_dice(num_sides, num_dice):
 def monte_carlo_advantage_dice(num_sides, num_dice, num_trials):
     return np.mean([roll_advantage_dice(num_sides, num_dice) for _ in range(num_trials)])
 
-    return base ** exponent
-
 def real_advantage_dice(num_sides, num_dice):
     
     # Probability of getting each outcome with the given number of rolls
